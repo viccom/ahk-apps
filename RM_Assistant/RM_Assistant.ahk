@@ -9,6 +9,11 @@ if not A_IsAdmin
    ExitApp
 }
 
+;if (A_Is64bitOS)
+;   OS_is := "64-bit"
+;else
+;    OS_is := "32-bit, which has only a single registry view"
+
 Gui Add, Button, x10 y10 w106 h50, 刷新
 
 Gui Add, Button, hWndrun x382 y10 w106 h50, 运行
